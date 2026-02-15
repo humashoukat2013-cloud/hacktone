@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+/* HEADER */
+header {
+    background: black;
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    color: orange;
+}/* LOGO AREA */
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+/* HERO */
+.finest {
+    height: 90vh;
+    background: url("finest.jpg") center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.finest-text {
+    color: white;
+    background: rgba(0,0,0,0.6);
+    padding: 20px;
+    text-align: center;
+}
+
+/* MENU */
+.menu {
+    padding: 150px;
+    text-align: center;
+}
+
+.menu-box {
+    display: flex;
+    justify-content: center;
+    gap: 250px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 250px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card span {
+    color: orange;
+    font-weight: bold;
+}
+
+/* ABOUT */
+.about {
+    background: #f2f2f2;
+    padding: 40px;
+    text-align: center;
+}
+
+/* CONTACT */
+.contact {
+    padding: 40px;
+    text-align: center;
+}
+
+/* FOOTER */
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+}
